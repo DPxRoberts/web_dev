@@ -1,30 +1,50 @@
+:root {
+  --bg-header: red; 
+  --bg-nav: yellow;
+  --bg-main: blue;
+  --bg-section: green;
+  --bg-article: white;
+  --bg-aside: purple;
+  --bg-footer: grey;
+  --ink-main: #fff;
+  --ink-second: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 h1,
 h2,
 h3 {
   font-family: helvetica;
   font-size: 25px;
-  color: #fff;
+  color: var(--ink-main);
   text-decoration: underline;
 }
+
 header {
   display: flex;
-  background: red;
-  height: 150px;
-  text-align: center;
+  background: var(--bg-header);
+  height: 100px;
+ text-align: center;
   align-items: center;
-  justify-content: center;
+  justify-content: center; 
 }
 
 nav {
   display: flex;
-  background: yellow;
+  background: var(--bg-nav);
   text-align: center;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
 }
 
 nav h1 {
-  color: #000;
+  color: var(--ink-second);
 }
 
 main {
@@ -35,8 +55,8 @@ main {
     "article aside";
   gap: 10px;
   padding: 10px;
-  background: blue;
-  height: 500px;
+  background: var(--bg-main);
+  min-height: 800px;
 }
 
 
@@ -50,22 +70,22 @@ article {
 }
 
 section {
-  background: green;
+  background: var(--bg-section);
   grid-area: section;
 }
 
 article {
-  background: #e6e6e6;
+  background: var(--bg-article);
   grid-area: article;
 }
 
 article h1 {
-  color: #000;
+  color: var(--ink-second);
 }
 
 aside {
   grid-area: aside;
-  background: purple;
+  background: var(--bg-aside);
   max-height: 100%;
   width: 100%;
   display: flex;
@@ -76,8 +96,8 @@ aside {
 
 footer {
   display: flex;
-  background: grey;
-  height: 150px;
+  background: var(--bg-footer);
+  height: 100px;
   align-items: center;
   text-align: center;
   justify-content: center;
