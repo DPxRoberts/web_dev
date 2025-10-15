@@ -1,0 +1,17 @@
+:root {
+  --bg: #212121;
+  --ink-main: #4a4a4a;
+  --ink-hover: #fa923f;
+  --ink-menu: #333;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scrollbar-color: var(--ink-hover) var(--ink-main);
+}
+
+html {
+  scroll-behavior: smooth;
+}
